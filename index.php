@@ -13,7 +13,7 @@
 <body>
 
 
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
+<nav id="topnav" class="navbar navbar-default navbar-inverse" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,7 +46,7 @@
                     
                 
                 <div class="row">
-		  <div class="col-xs-8"><input class="form-control URLinput" id="URL" name="URL" placeholder="Enter your EzProxy URL here" type="text" value="<?php echo htmlspecialchars($_GET["URL"]); ?>"/></div>
+		  <div class="col-xs-8"><input class="form-control URLinput" id="URL" name="URL" placeholder="Enter your EzProxy URL here" type="text" value="<?php if(isset($_GET["URL"])) { echo htmlspecialchars($_GET["URL"]); } ?>"/></div>
 		  <div class="col-xs-4"><button id="submit" class="btn btn-default btn-submit btn-primary" type="submit"><span class="glyphicon glyphicon-arrow-right"></span> Make bookmarklet!</button></div>
 		</div>
                 
@@ -90,6 +90,6 @@
 	  ga('send', 'pageview');
 	</script>
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-	<?php if($_GET["URL"]) {echo "<script type=\"text/javascript\">generateLink();</script>";}?>
+	<?php if(isset($_GET["URL"])) {echo "<script type=\"text/javascript\">generateLink();</script>";}?>
 </body>
 </html>
