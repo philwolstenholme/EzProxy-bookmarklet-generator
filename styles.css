@@ -1,0 +1,49 @@
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-brand {
+    max-width: 300px;
+}
+
+.form-inline input {
+    width: 100%;
+}
+
+iframe {
+    display: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.bookmarklet {
+    transition: all .5s ease-in-out;
+}
+
+.glow {
+    -webkit-box-shadow: 0 0 9px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 0 9px rgba(0,0,0,0.35);
+    box-shadow: 0 0 9px rgba(0,0,0,0.35);
+    -webkit-transform: scale(1.1);
+}
+
+.textglow {
+	text-shadow: 0 0 19px rgba(0,0,0,0.35);
+}
+
+.caps {
+	font-size: .9em;
+}
+
+.URLinput {
+	width: 100%;
+	display: inline;
+}
+
+.btn-submit {
+	display:inline;
+	width: 100%;
+}
