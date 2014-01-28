@@ -47,3 +47,7 @@ p {
 	display:inline;
 	width: 100%;
 }
+
+#topnav {
+border-radius: 0;
+}
