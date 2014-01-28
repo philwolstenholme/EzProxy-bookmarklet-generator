@@ -39,15 +39,14 @@ p {
 }
 
 .URLinput {
-	width: 100%;
+	width: 50%;
 	display: inline;
 }
 
 .btn-submit {
 	display:inline;
-	width: 100%;
 }
 
 #topnav {
-border-radius: 0;
+	border-radius: 0;
 }
