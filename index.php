@@ -47,7 +47,7 @@
                 
                 <div class="row">
 		  <div class="form-inline">
-		  	<input class="URLinput" id="URL" name="URL" placeholder="Enter your EzProxy URL here" type="text" value="<?php if(isset($_GET["URL"])) { echo htmlspecialchars($_GET["URL"]); } ?>"/>
+		  	<input class="form-control URLinput" id="URL" name="URL" placeholder="Enter your EzProxy URL here" type="text" value="<?php if(isset($_GET["URL"])) { echo htmlspecialchars($_GET["URL"]); } ?>"/>
 		  	<button id="submit" class="btn btn-default btn-submit btn-primary" type="submit"><span class="glyphicon glyphicon-arrow-right"></span> Make bookmarklet!</button>
 		  </div>
 		</div>
